@@ -1,0 +1,55 @@
+.portfolio {
+    padding-top: 55px;
+    padding-bottom: 55px;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        height: 700px;
+    }
+
+    &__item {
+        max-width: 100%;
+        &:not(:first-child) {
+            display: none;
+        }
+        @include tablet {
+            &:nth-child(2) {
+                display: block;
+            }
+            max-width: calc(100% / 2);
+        }
+        @include desktop {
+            &:nth-child(3) {
+                display: block;
+            }
+            max-width: calc(100% / 3);
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
+    &__item-content {
+        padding: 30px;
+        width: 100%;
+        height: 50%;
+    }
+
+    & .btn {
+        margin-top: 10px;
+    }
+}
+
+.color_pink {
+    background-color: var(--bg-pink-color);
+}
+.color_orange {
+    background-color: var(--bg-orange-color);
+}
+.color_blue {
+    background-color: var(--bg-blue-color);
+}

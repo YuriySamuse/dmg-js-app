@@ -1,0 +1,30 @@
+.soc {
+    &__list {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    &__link {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--bg-main-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition:
+            color 300ms linear,
+            background-color 300ms linear;
+
+        & > .soc-icon {
+            fill: currentColor;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: var(--bg-orange-color);
+            color: var(--bg-main-color);
+        }
+    }
+}

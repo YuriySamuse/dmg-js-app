@@ -1,0 +1,51 @@
+body {
+    font-family: "Montserrat", sans-serif;
+    font-family: "Open Sans", sans-serif;
+}
+
+.list {
+    list-style: none;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    // position: relative;
+}
+
+.section__title {
+    color: var(--title-text-color);
+    padding-top: 20px;
+    padding-bottom: 50px;
+    text-align: center;
+
+    // &::before {
+    //     content: "";
+    //     // position: absolute;
+    //     width: 200px;
+    //     height: 3px;
+    //     border-bottom: 3px solid var(--border-title-color);
+    //     left: 50%;
+    //     -webkit-transform: translate(-50%, 0);
+    //     -ms-transform: translate(-50%, 0);
+    //     transform: translate(-50%, 0);
+    //     bottom: -24px;
+    // }
+}
+.title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+    margin-bottom: 10px;
+}
+
+.text {
+    margin-bottom: 10px;
+}

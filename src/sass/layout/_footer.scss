@@ -1,0 +1,42 @@
+.footer {
+    &__nav {
+        min-height: 77px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__nav-list {
+        display: none;
+
+        @include tablet {
+            display: flex;
+            gap: 10px;
+        }
+        @include desktop {
+            display: flex;
+            gap: 20px;
+        }
+    }
+
+    &__nav-item {
+        &:last-child {
+            display: none;
+            @include desktop {
+                display: block;
+            }
+        }
+
+        &:hover {
+            color: var(--accent-color);
+        }
+    }
+
+    &__copy {
+        height: 66px;
+        background-color: var(--bg-main-color);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

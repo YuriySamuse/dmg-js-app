@@ -1,0 +1,25 @@
+@import "./utils/vars";
+@import "./utils/hidden";
+@import "./utils/mixins";
+@import "./utils/is-hidden";
+@import "./utils/no-scroll";
+
+@import "./base/reset";
+@import "./base/common";
+// @import "./base/is-active";
+
+@import "./components/container";
+@import "./components/modal";
+@import "./components/btn";
+@import "./components/soc";
+@import "./components/form";
+
+@import "./layout/hero";
+@import "./layout/heder";
+@import "./layout/about";
+@import "./layout/teams";
+@import "./layout/services";
+@import "./layout/partners";
+@import "./layout/portfolio";
+@import "./layout/contacts";
+@import "./layout/footer";
