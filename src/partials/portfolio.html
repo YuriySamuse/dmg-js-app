@@ -1,55 +1,87 @@
-.portfolio {
-    padding-top: 55px;
-    padding-bottom: 55px;
-
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        height: 700px;
-    }
-
-    &__item {
-        max-width: 100%;
-        &:not(:first-child) {
-            display: none;
-        }
-        @include tablet {
-            &:nth-child(2) {
-                display: block;
-            }
-            max-width: calc(100% / 2);
-        }
-        @include desktop {
-            &:nth-child(3) {
-                display: block;
-            }
-            max-width: calc(100% / 3);
-        }
-    }
-
-    &__image {
-        max-width: 100%;
-        object-fit: cover;
-        overflow: hidden;
-    }
-
-    &__item-content {
-        padding: 30px;
-        width: 100%;
-        height: 50%;
-    }
-
-    & .btn {
-        margin-top: 10px;
-    }
-}
-
-.color_pink {
-    background-color: var(--bg-pink-color);
-}
-.color_orange {
-    background-color: var(--bg-orange-color);
-}
-.color_blue {
-    background-color: var(--bg-blue-color);
-}
+<section id="our-works" class="portfolio section">
+  <h2 class="section__title">Наші роботи</h2>
+  <ul class="portfolio__list list">
+    <li class="portfolio__item">
+      <div class="portfolio__item-content color_blue">
+        <h3 class="title">ТМ Goo.N</h3>
+        <p class="text">
+          <b>ТМ:</b> підгузки Goo.N Рекламна компанія: New born marketing,
+          реклама у посібнику «IQ mama Club»
+        </p>
+        <p class="text">
+          <b>ЦА:</b> мами з новонародженими у провідних ЛПЗ в обласних центрах.
+        </p>
+        <p class="text">
+          <b>Цілі:</b> підключення споживачів з перших днів використання
+          підгузків
+        </p>
+        <p class="text">
+          <b>Рекламна компанія:</b> New born marketing, реклама у посібнику «IQ
+          mama Club»
+        </p>
+        <button type="button" class="btn">Детальніше</button>
+      </div>
+      <img
+        src="./img/our-works-pic1.jpg"
+        alt="Photo bg Baby"
+        class="portfolio__image"
+        width="800"
+        height="350"
+      />
+    </li>
+    <li class="portfolio__item">
+      <img
+        src="./img/our-works-pic2.jpg"
+        alt="Photo bg Baby"
+        class="portfolio__image"
+        height="350"
+        width="800"
+      />
+      <div class="portfolio__item-content color_blue">
+        <h3 class="title">ТМ Синево</h3>
+        <p class="text"><b>ТМ:</b> медична лабораторія «Синево»</p>
+        <p class="text">
+          <b>ЦА:</b>вагітні жінки в жіночих консультаціях України (міста
+          мільйонники), мами з новонародженими.
+        </p>
+        <p class="text">
+          <b>Цілі:</b> Заохочування споживачів використовувати лабораторію
+          «Синево»
+        </p>
+        <p class="text"><b>Рекламна компанія:</b> New pregnancy marketing</p>
+        <button type="button" class="btn">Детальніше</button>
+      </div>
+    </li>
+    <li class="portfolio__item">
+      <div class="portfolio__item-content color_orange">
+        <h3 class="title">Хьюмер</h3>
+        <p class="text">
+          <b>ЦА:</b> вагітні переважно після 25 тижнів, мами з новонародженими
+          та до 1,5 років
+        </p>
+        <p class="text">
+          <b>Цілі:</b> підключення споживачів з перших днів використання
+          продукції бренду
+        </p>
+        <p class="text"><b>Рекламна компанія:</b> комплексна</p>
+        <p class="text"><b>Період:</b> – 2017-2019</p>
+        <p class="text"><b>Географія:</b> мільйонники + обл.центри</p>
+        <button type="button" class="btn">Детальніше</button>
+      </div>
+      <div class="portfolio__item-content color_pink">
+        <h3 class="title">Baby Story</h3>
+        <p class="text">
+          <b>ЦА:</b> вагітні переважно після 25 тижнів, мами з новонародженими
+          та до 2 років.
+        </p>
+        <p class="text">
+          <b>Цілі:</b> Підвищення впізнаваності, заклик до здійснення покупки.
+        </p>
+        <p class="text"><b>Рекламна компанія:</b> комплексна</p>
+        <p class="text"><b>Період:</b> 2012-2017</p>
+        <p class="text"><b>Географія:</b> вся Україна.</p>
+        <button type="button" class="btn">Детальніше</button>
+      </div>
+    </li>
+  </ul>
+</section>
