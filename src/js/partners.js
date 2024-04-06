@@ -29,8 +29,6 @@ function createPartnerCardMarkup(partners) {
     `;
     })
     .join('');
-
-  console.log(markup);
 }
 
 function onPartnerContainerMousover(evt) {
