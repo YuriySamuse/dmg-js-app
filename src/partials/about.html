@@ -15,7 +15,11 @@
         жінкою в один із найцікавіших періодів її життя.
       </p>
       <div class="about__btn_wrap">
-        <button class="about__btn btn" data-action="open-modal">
+        <button
+          class="about__btn btn"
+          data-action="open-modal"
+          data-id="modal-about"
+        >
           Детальніше
         </button>
       </div>
@@ -24,8 +28,8 @@
   <div class="about__info_right">
     <img class="about__img" src="./img/pic-litel-info.jpg" alt="litle info" />
   </div>
-  <div class="backdrop js-backdrop">
-    <div class="modal">
+  <div class="backdrop">
+    <div class="modal" id="modal-about">
       <h2>DMG (Direct marketing group)</h2>
       <p>
         Ми – маркетингове агентство, що надає послуги з директ-маркетингу. Наша
@@ -39,7 +43,14 @@
         та матусями з дітками, ми із задоволенням допоможемо Вам у цьому та
         станемо для Вас надійним партнером.
       </p>
-      <button type="button" class="btn" data-action="close-modal">Close</button>
+      <button
+        type="button"
+        class="btn"
+        data-action="close-modal"
+        data-id="modal-about"
+      >
+        Close
+      </button>
     </div>
   </div>
 </section>
