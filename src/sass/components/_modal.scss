@@ -30,7 +30,7 @@ body.show-modal .backdrop.active .modal {
 .modal {
     padding: 24px;
     border-radius: 4px;
-    max-width: 640px;
+    max-width: 1420px;
     width: 100%;
     min-height: 320px;
     background-color: #fff;
@@ -38,9 +38,24 @@ body.show-modal .backdrop.active .modal {
     transform: scale(1.1);
     transition: transform 300ms ease-in-out;
 
-    & > p {
-        padding: 30px;
-        text-align: justify;
-        text-indent: 1.5em;
+    &__service {
+        max-width: 680px;
+        // text-align: center;
     }
+    // & > img {
+    //     margin: 0 auto;
+    //     max-width: 480px;
+    // }
+    // & > p {
+    //     padding: 30px;
+    //     text-align: justify;
+    //     text-indent: 1.5em;
+    // }
+}
+
+.modal-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20;
+    padding: 40px;
 }

@@ -98,4 +98,18 @@
     &__img {
         width: 100%;
     }
+
+    &__modal {
+        display: flex;
+    }
+    &__modal-content {
+        max-width: 440px;
+        margin: 0 auto;
+        @include tablet {
+            max-width: 738px;
+        }
+        @include desktop {
+            max-width: 485px;
+        }
+    }
 }

@@ -11,11 +11,11 @@ function createTeamCardMarkup(teams) {
   return teams
     .map(({ name, imgURL, description }) => {
       return `
-        <li class="teams__item">
+        <li class="teams__item b-carousel__item">
         <img
           src="${imgURL}"
           alt="${name}"
-          class="teams__img"
+          class="teams__img b-carousel__img"
         />
         <h3 class="title">${name}</h3>
         <p>${description}</p>

@@ -1,0 +1,51 @@
+.b-carousel {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+
+    box-sizing: border-box;
+    border: 1px solid;
+
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        transform: translateY(-50%) translateZ(0);
+        cursor: pointer;
+        text-indent: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        z-index: 3;
+    }
+
+    &__next {
+        left: auto;
+        right: 20px;
+    }
+
+    &__wrap {
+        display: flex;
+        transition: transform 0.5s;
+        will-change: transform;
+        position: relative;
+        z-index: 1;
+        height: 100%;
+    }
+
+    &__item {
+        flex: 0 0 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+}
