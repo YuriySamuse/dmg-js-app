@@ -30,6 +30,21 @@ const teams = [
     imgURL: kulish,
     description: ' ',
   },
+  {
+    name: 'Волкова Маріна',
+    imgURL: volkova,
+    description: 'Засновник компанії',
+  },
+  {
+    name: 'Тетерина Анастасія',
+    imgURL: teterina,
+    description: 'Регіональний менеджер, лікар – неонатолог (м. Харків)',
+  },
+  {
+    name: 'Надія Моторна',
+    imgURL: motorna,
+    description: 'Регіональний менеджер, сімейний лікар (м. Одеса)',
+  },
 ];
 
 export default teams;

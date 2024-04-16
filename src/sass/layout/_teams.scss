@@ -1,34 +1,7 @@
 .teams {
     background-color: var(--bg-section-color);
-    &__list {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 30px;
-    }
-
-    &__item {
-        text-align: center;
-        width: 100%;
-        @include tablet {
-            width: calc((100% - 30px) / 2);
-        }
-        @include desktop {
-            width: calc((100% - 120px) / 5);
-        }
-
-        & > h3 {
-            font-size: 18px;
-            margin-top: 23px;
-            margin-bottom: 7px;
-        }
-
-        & > p {
-            font-size: 14px;
-            margin-bottom: 10px;
-        }
-    }
-
-    &__img {
-        width: 100%;
+    text-align: center;
+    & img {
+        margin-bottom: 2rem;
     }
 }

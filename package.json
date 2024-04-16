@@ -19,6 +19,8 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "embla-carousel": "^8.0.2",
+    "embla-carousel-autoplay": "^8.0.2",
     "modern-normalize": "^1.1.0"
   },
   "devDependencies": {
