@@ -12,13 +12,15 @@ function createTeamCardMarkup(teams) {
     .map(({ name, imgURL, description }) => {
       return `
         <li class="teams__item embla__slide">
-        <img
-          src="${imgURL}"
-          alt="${name}"
-          class="teams__img embla__slide__number"
-        />
-        <h3 class="title">${name}</h3>
-        <p>${description}</p>
+        <div class="embla__slide__number">
+          <img
+            src="${imgURL}"
+            alt="${name}"
+            class="teams__img "
+          />
+          <h3 class="title">${name}</h3>
+          <p>${description}</p>
+        </div>
       </li>
       `;
     })
