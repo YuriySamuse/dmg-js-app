@@ -2,14 +2,16 @@ import throttle from 'lodash.throttle';
 
 const STORAGE_KEY = 'feedback-msg';
 
+const contactFormData = {};
+
 const refs = {
   form: document.querySelector('.js-contact-form'),
-  textarea: document.querySelector('.js-contact-form textarea'),
 };
 refs.form.addEventListener('submit', onFormSubmit);
-refs.textarea.addEventListener('input', throttle(onTextInput, 3000));
+refs.form.addEventListener('input', throttle(onTextInput, 200));
 
-populateTextarea();
+populateMessage();
+
 function onFormSubmit(evt) {
   evt.preventDefault();
   evt.currentTarget.reset();
@@ -17,16 +19,15 @@ function onFormSubmit(evt) {
 }
 
 function onTextInput(evt) {
-  const message = evt.currentTarget.value;
-
-  localStorage.setItem(STORAGE_KEY, message);
+  contactFormData[evt.target.name] = evt.target.value;
+  localStorage.setItem(STORAGE_KEY, JSON.stringify(contactFormData));
 }
 
-function populateTextarea() {
-  const savedMessage = localStorage.getItem(STORAGE_KEY);
-
+function populateMessage() {
+  const savedMessage = JSON.parse(localStorage.getItem(STORAGE_KEY));
   if (savedMessage) {
-    console.log(savedMessage);
-    refs.textarea.value = savedMessage;
+    Object.entries(savedMessage).forEach(([name, value]) => {
+      refs.form.elements[name].value = value;
+    });
   }
 }
