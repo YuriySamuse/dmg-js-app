@@ -2,7 +2,7 @@ import EmblaCarousel from 'embla-carousel';
 import { addPrevNextBtnsClickHandlers } from './embala/EmbalaCarouselArrowButton';
 import { addDotBtnsAndClickHandlers } from './embala/EmbalaCarouselDotButton';
 
-const OPTIONS = { loop: true };
+const OPTIONS = { loop: false };
 
 const emblaNode = document.querySelector('.embla');
 const viewportNode = emblaNode.querySelector('.embla__viewport');

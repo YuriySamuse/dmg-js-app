@@ -75,6 +75,10 @@
         @include tablet {
             display: block;
         }
+
+        @include desktop {
+            width: calc(50% - 15px);
+        }
         position: relative;
 
         width: 100%;
@@ -88,10 +92,6 @@
             width: calc(100% - 40px);
             height: calc(100% - 40px);
             border: 7px solid rgba(255, 255, 255, 0.5);
-        }
-
-        @include desktop {
-            width: calc(60% - 15px);
         }
     }
 
